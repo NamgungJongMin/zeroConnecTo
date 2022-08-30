@@ -1,10 +1,24 @@
 /* 웹카페 실습 */
 @import url("./normalize.css");
+@import url("./reset.css");
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+/* 기본스타일 */
+html {
+  font-size: 16px;
+}
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 0.875rem;
+  background-color: #ccc;
+  background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+}
+
 /* 레이아웃 */
 
 .header,
@@ -17,7 +31,8 @@
 }
 
 .header {
-  background: yellow;
+  background: #fff;
+  border-top: 1px solid transparent;
 }
 /* 비주얼 */
 .visual {
@@ -60,6 +75,8 @@
 }
 .footer {
   background: purple;
+  background-color: #ccc;
+  background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
 .footer-inner {
   background: orange;
