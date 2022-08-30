@@ -18,7 +18,6 @@
 
 .header {
   background: yellow;
-  height: auto;
 }
 /* 비주얼 */
 .visual {
@@ -28,16 +27,40 @@
 .main {
   background: blue;
   min-height: 400px;
+  padding: 15px;
+  /* display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around; */
+}
+
+.main::after {
+  content: "";
+  background-color: red;
+  clear: both;
+  display: block;
+}
+
+.group {
+  background-color: silver;
+  float: left;
+  margin: 15px;
+}
+.group1 {
+  width: 250px;
+}
+.group2 {
+  width: 380px;
+  /* order: 1; */
+}
+.group3 {
+  width: 190px;
 }
 .slogan {
   background: green;
-  height: auto;
 }
 .footer {
   background: purple;
-  height: auto;
 }
 .footer-inner {
-  background: yellow;
-  height: auto;
+  background: orange;
 }
