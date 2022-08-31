@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+/* 숨김 컨텐츠 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
 /* 기본스타일 */
 html {
   font-size: 16px;
@@ -62,6 +71,15 @@ a {
 }
 .member li {
 }
+
+/* 메인 메뉴 */
+.navigation {
+  padding-bottom: 30px;
+}
+.menu {
+  background: orange;
+}
+
 /* 비주얼 */
 .visual {
   background: pink;
