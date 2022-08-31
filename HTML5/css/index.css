@@ -18,6 +18,10 @@ body {
   background-color: #ccc;
   background-image: linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* 레이아웃 */
 
@@ -29,9 +33,34 @@ body {
   width: 940px;
   margin: 0 auto;
 }
-
+/* 헤더 */
 .header {
   background: #fff;
+  position: relative;
+  padding: 0 30px;
+}
+/* 로고 */
+.logo {
+  /* background-color: blue; */
+  position: absolute;
+  top: 45px;
+  left: 65px;
+}
+/* 멤버 링크 모음 */
+.member {
+  text-align: right;
+  padding: 4px 0;
+  transform: translateX(8px);
+}
+.member li,
+.member a {
+  display: inline-block;
+}
+.member a {
+  padding: 6px 8px;
+  text-transform: uppercase;
+}
+.member li {
 }
 /* 비주얼 */
 .visual {
