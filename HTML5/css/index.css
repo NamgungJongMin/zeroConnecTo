@@ -188,6 +188,50 @@ menu-standards {
 }
 .visual {
   height: 120px;
+  position: relative;
+}
+.visual::before,
+.visual::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  animation-play-state: paused;
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.visual::before {
+  /* background-color: pink; */
+  background-image: url("./images/ani_flower_01.png"), url("./images/ani_flower_02.png");
+  background-position: 0 -10px, 600px 0;
+  /* animation-name: fadeEffect;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite; */
+  animation: fadeEffect 2s alternate infinite;
+}
+
+.visual::after {
+  /* background-color: yellow; */
+  background-image: url("./images/ani_flower_03.png"), url("./images/ani_flower_04.png");
+  background-position: 300px 0, 800px 0;
+  /* animation-name: fadeEffect;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite; */
+  animation: fadeEffect 2s alternate infinite;
+  animation-delay: 1s;
 }
 
 .visual-text {
