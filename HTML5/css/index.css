@@ -239,6 +239,8 @@ menu-standards {
   animation-name: moveEffect;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  position: relative;
+  z-index: 10;
 }
 .main {
   background: blue;
