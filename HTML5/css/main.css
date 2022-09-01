@@ -386,9 +386,9 @@ legend {
 }
 
 /* 유효성 검사 배너 */
-.validation {
+/* .validation {
   margin-bottom: 20px;
-}
+} */
 
 .validation-list li {
   margin-bottom: 10px;
