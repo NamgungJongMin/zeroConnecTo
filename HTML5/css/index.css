@@ -11,7 +11,8 @@
 }
 
 /* 숨김 컨텐츠 */
-.sr-only {
+.sr-only,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -243,12 +244,12 @@ menu-standards {
   z-index: 10;
 }
 .main {
-  background: blue;
   min-height: 400px;
   padding: 15px;
   /* display: flex;
   flex-flow: row nowrap;
   justify-content: space-around; */
+  background: #fff;
 }
 
 .main::after {
@@ -259,13 +260,131 @@ menu-standards {
 }
 
 .group {
-  background-color: silver;
   float: left;
   margin: 15px;
 }
 .group1 {
   width: 250px;
 }
+
+/* 로그인 */
+.login {
+  background: radial-gradient(circle at right top, #e8852e, #ed552f);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #aaa;
+  padding: 10px;
+}
+.login-title {
+  color: yellow;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form,
+.sign {
+  background: #fff;
+}
+
+.login-form {
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 4px;
+}
+
+.login-form div {
+  margin-bottom: 6px;
+}
+
+.login-form label {
+  display: inline-block;
+  /* background: yellow; */
+  width: 4em;
+}
+
+.login-form input {
+  width: 90px;
+  height: 22px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  padding: 2px 2px 2px 10px;
+}
+
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #ed552f;
+  border-radius: 2px;
+  border: 0;
+}
+
+.sign {
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.sign a {
+  padding: 6px 0;
+}
+
+.sign .icon-right-open {
+  color: #e85e2c;
+}
+
+/* .login-form {
+  position: relative;
+  background-color: #fff;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+.login-form legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+#userEmail {
+  width: 100px;
+}
+
+#userPw {
+  width: 100px;
+}
+
+.login-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 100%;
+}
+
+.sign {
+  background-color: #fff;
+  width: 240px;
+  margin-top: 0;
+  margin-left: 10px;
+  padding: 10px;
+} */
+
 .group2 {
   width: 380px;
   /* order: 1; */
@@ -273,6 +392,7 @@ menu-standards {
 .group3 {
   width: 190px;
 }
+
 .slogan {
   background: lime;
 }
