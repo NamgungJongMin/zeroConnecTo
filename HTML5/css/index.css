@@ -212,25 +212,14 @@ menu-standards {
   }
 }
 .visual::before {
-  /* background-color: pink; */
   background-image: url("./images/ani_flower_01.png"), url("./images/ani_flower_02.png");
   background-position: 0 -10px, 600px 0;
-  /* animation-name: fadeEffect;
-  animation-duration: 5s;
-  animation-fill-mode: backwards;
-  animation-iteration-count: infinite; */
   animation: fadeEffect 2s alternate infinite;
 }
 
 .visual::after {
-  /* background-color: yellow; */
   background-image: url("./images/ani_flower_03.png"), url("./images/ani_flower_04.png");
   background-position: 300px 0, 800px 0;
-  /* animation-name: fadeEffect;
-  animation-duration: 5s;
-  animation-delay: 2s;
-  animation-fill-mode: backwards;
-  animation-iteration-count: infinite; */
   animation: fadeEffect 2s alternate infinite;
   animation-delay: 1s;
 }
@@ -240,7 +229,7 @@ menu-standards {
   animation-name: moveEffect;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  position: relative;
+  position: absolute;
   z-index: 10;
 }
 .main {
@@ -250,7 +239,7 @@ menu-standards {
   flex-flow: row nowrap;
   justify-content: space-around; */
   background: #fff;
-  border-radius: 15px 15 px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .main::after {
@@ -401,10 +390,65 @@ menu-standards {
 .validation-list a:focus {
 } */
 
+/* dl */
+.term {
+  padding: 15px;
+  border: 1px solid #aaa;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+.term-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-list {
+  margin-top: 15px;
+}
+.term-list > div {
+  margin-top: 10px;
+  display: flow-root;
+}
+
+.term-list-subject,
+.term-list-brief {
+  float: right;
+  width: 145px;
+}
+
+.term-list-subject {
+  color: #296897;
+  font-weight: 500;
+}
+
+.term-list-thumbnail {
+  float: left;
+}
+
+.term-list-thumbnail img {
+  vertical-align: top;
+}
+
 .slogan {
   background: lime;
 }
 
+.term-list-brief {
+  float: right;
+  width: 145px;
+  line-height: 1.5;
+  /* margin-top: 5px; */
+}
+
+.cross .term-list-subject,
+.cross .term-list-brief {
+  float: left;
+}
+
+.cross .term-list-thumbnail {
+  float: right;
+}
 /* 푸터 */
 .footer {
   background-color: #ccc;
