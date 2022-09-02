@@ -3,6 +3,7 @@
 @import url("./fontello.css");
 @import url("./normalize.css");
 @import url("./reset.css");
+@import url("./form.css");
 
 *,
 *::before,
@@ -449,6 +450,44 @@ menu-standards {
 .cross .term-list-thumbnail {
   float: right;
 }
+/* 서치폼 */
+/* .search-form fieldset {
+  display: flex;
+  justify-content: center;
+}
+
+.form-group {
+  background: #ccc;
+  padding: 10px 10px;
+}
+.form-group-label {
+  background: yellow;
+}
+.form-group-input {
+  background: blue;
+}
+.button-fill {
+} */
+
+.search-form-inner {
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding: 15px 25px 10px 25px;
+  border: 1px solid #aaa;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.search-form-inner .form-group {
+  flex-grow: 1;
+}
+
+.search-form-inner .form-group-input {
+}
+/* 슬로건 */
+
 /* 푸터 */
 .footer {
   background-color: #ccc;
