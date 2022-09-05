@@ -475,6 +475,7 @@ menu-standards {
   border: 1px solid #aaa;
   border-radius: 15px 15px 0 0;
   border-bottom: 0;
+  /* margin-right: 12px; */
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
