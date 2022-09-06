@@ -493,6 +493,84 @@ menu-standards {
   right: -8px;
   top: -8px;
 }
+/* 신규이벤트 및 관련 사이트 */
+.gradient-effect {
+  position: relative;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.event {
+  /* background-color: yellow; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* gap: 10px; */
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+}
+.event-title,
+.related-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.accent-color {
+  color: #e85e2c;
+}
+
+.event-button-wrapper {
+  /* background: lime; */
+  overflow: hidden;
+  height: 22px;
+  padding: 2px;
+  margin-left: auto;
+  transform: translate(2px, -2px);
+}
+
+.event-button-wrapper > button {
+  width: 19px;
+  height: 0;
+  border: 0;
+  background-image: url("./images/back_forward.png");
+  background-repeat: no-repeat;
+  padding: 18px 0 0 0;
+}
+
+.event-button-wrapper button:focus {
+  outline-offset: -2px;
+}
+
+/* .event-button-prev {
+} */
+.event-button-next {
+  background-position: -36px 0;
+}
+
+/* .event div:last-child {
+  background: yellow !important;
+  width: 100%;
+} */
+
+#eventDetail {
+  /* background: brown; */
+  width: 100%;
+  margin-top: 10px;
+}
+.event-thumbnail img {
+  box-shadow: 7px 7px 0 0 #aaa;
+}
+
+.event-brief {
+  margin-top: 12px;
+  line-height: 1.5rem;
+}
+
+.related {
+  margin-top: 10px;
+}
 
 .slogan {
   background: lime;
