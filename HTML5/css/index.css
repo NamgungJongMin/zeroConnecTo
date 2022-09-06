@@ -502,6 +502,10 @@ menu-standards {
   background: #ccc linear-gradient(to bottom, #ccc, #eee);
 }
 
+.margin-top-default {
+  margin-top: 20px;
+}
+
 .event {
   /* background-color: yellow; */
   display: flex;
@@ -597,6 +601,67 @@ menu-standards {
 .related-list:focus {
   outline-offset: -2px;
 }
+
+/* favorite */
+.favorite {
+  position: relative;
+}
+
+.favorite-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.favorite-list {
+  margin-top: 10px;
+  list-style-type: none;
+  counter-reset: number;
+}
+
+.favorite-list li {
+  margin-top: 8px;
+  position: relative;
+  vertical-align: middle;
+  counter-increment: number;
+}
+
+.favorite-list li::before {
+  content: counter(number);
+  display: inline-box;
+  border-radius: 2px;
+  background-color: #aaa;
+  margin-top: 10px;
+  padding: 0 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 0.5em;
+}
+
+.favorite-list em {
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 0;
+  display: inline-block;
+  width: 9px;
+  height: 11px;
+  background: url("./images/rank.png") no-repeat;
+}
+
+.favorite-list .down {
+  background-position: 0 100%;
+}
+
+.favorite-list .stop {
+  background-position: 0 50%;
+}
+
+.favorite-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
 .slogan {
   background: lime;
 }
