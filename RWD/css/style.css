@@ -48,6 +48,7 @@
   background: var(--white);
   border-radius: 0.25rem;
   padding: 0.125rem 0.75rem;
+  appearance: none;
 }
 
 .button {
