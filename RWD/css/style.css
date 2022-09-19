@@ -4,6 +4,9 @@
 @import url(./base.css);
 
 /* 공통 스타일 */
+.far {
+  margin-right: var(--spacing-xs);
+}
 /* 헤더 */
 .appHeader {
   padding: var(--spacing-base) var(--spacing-lg);
@@ -210,6 +213,72 @@
   height: 100%;
 }
 
+/* 공통 게시판 */
+.board {
+  position: relative;
+}
+
+.board__item {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: var(--spacing-xs);
+}
+
+.board__link {
+  /* flex-grow: 1; */
+  width: calc(100% - 6rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board__date {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.board__more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--spacing-sm);
+  transform: translateX(var(--spacing-xs));
+}
+
+/* 공통 인기사이트 */
+.favorite__item {
+  margin-top: var(--spacing-xs);
+}
+
+/* 공통 트위터 */
+.twitter__userInfo {
+  display: inline-flex;
+  gap: var(--spacing-xs);
+}
+
+.twitter__userProfile {
+  float: right;
+  shape-outside: circle(50%);
+  width: 50px;
+  height: 50px;
+  max-width: 110px;
+  margin-left: var(--spacing-xs);
+}
+
+.twitter__userProfileImage {
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% 40%;   
+}
+
+.twitter__date {
+  display: block;
+  margin-top: var(--spacing-xs);
+}
 /* 푸터 */
 .appFooter {
   background-color: lime;
